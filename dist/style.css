@@ -60,10 +60,30 @@ body {
 .accordion__subheader {
   font-size: 0.8125rem;
   color: #4a4b5e;
+  display: block;
+  cursor: pointer;
+  transition: color 150ms ease-in-out;
 }
 
 .accordion__subheader:hover {
   color: #f47c57;
+}
+
+.accordion__checkbox {
+  display: none;
+}
+
+.accordion__checkbox + .accordion__subheader + .accordion__wrapper {
+  display: none;
+}
+
+.accordion__checkbox:checked + .accordion__subheader + .accordion__wrapper {
+  display: block;
+}
+
+.accordion__checkbox:checked + .accordion__subheader {
+  font-weight: 700;
+  color: #1d1e35;
 }
 
 .accordion__text {

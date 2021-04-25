@@ -19,13 +19,34 @@
   &__subheader {
     font-size: rem(13px);
     color: $veryDarkGrayBlue;
+    display: block;
+    cursor: pointer;
+    transition: color 150ms ease-in-out;
 
     &:hover {
       color: $softRed;
     }
   }
 
-  &__checkbox {}
+  &__checkbox {
+    display: none;
+
+    // If unchecked, don't display the text after it,
+    &+.accordion__subheader+.accordion__wrapper {
+      display: none;
+    }
+
+    // If checked, display the text...
+    &:checked+.accordion__subheader+.accordion__wrapper {
+      display: block;
+    }
+
+    // ...and also style the subheader/question differently
+    &:checked+.accordion__subheader {
+      font-weight: 700;
+      color: $darkBlue;
+    }
+  }
 
   &__wrapper {}
 
