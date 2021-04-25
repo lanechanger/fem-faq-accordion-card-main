@@ -1,5 +1,10 @@
 .accordion {
-  padding: 0 7.34%;
+  padding: rem(132px) 7.34% rem(48px) 7.34%;
+  background-color: white;
+  box-shadow: rem(0px) rem(50px) rem(50px) rem(-20px) rgba(53, 18, 122, 0.497159);
+  border-radius: rem(23px);
+  position: relative;
+  margin-top: rem(148px);
 
   &__header {
     text-align: center;
