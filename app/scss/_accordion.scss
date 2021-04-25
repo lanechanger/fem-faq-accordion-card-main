@@ -1,11 +1,31 @@
 .accordion {
-  &__header {}
+  padding: 0 7.34%;
 
-  &__subheader {}
+  &__header {
+    text-align: center;
+    font-size: rem(32px);
+    font-weight: 700;
+
+    @include breakpoint-up(medium) {
+      text-align: left;
+    }
+  }
+
+  &__subheader {
+    font-size: rem(13px);
+    color: $veryDarkGrayBlue;
+
+    &:hover {
+      color: $softRed;
+    }
+  }
 
   &__checkbox {}
 
   &__wrapper {}
 
-  &__text {}
+  &__text {
+    color: $darkGrayBlue;
+    line-height: calc(18/12);
+  }
 }

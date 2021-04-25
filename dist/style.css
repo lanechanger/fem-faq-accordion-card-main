@@ -14,6 +14,8 @@ body {
   padding: 0;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 12px;
+  line-height: 1;
+  color: #1d1e35;
 }
 
 .attribution {
@@ -27,5 +29,35 @@ body {
 
 .l-site-container {
   margin: 0 6.4%;
+}
+
+.accordion {
+  padding: 0 7.34%;
+}
+
+.accordion__header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .accordion__header {
+    text-align: left;
+  }
+}
+
+.accordion__subheader {
+  font-size: 0.8125rem;
+  color: #4a4b5e;
+}
+
+.accordion__subheader:hover {
+  color: #f47c57;
+}
+
+.accordion__text {
+  color: #787887;
+  line-height: calc(18/12);
 }
 /*# sourceMappingURL=style.css.map */
