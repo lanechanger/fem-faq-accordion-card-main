@@ -105,6 +105,7 @@ body {
 }
 
 .accordion__hr {
-  color: #e7e7e9;
+  border: 0;
+  border-top: 1px solid #e7e7e9;
 }
 /*# sourceMappingURL=style.css.map */
