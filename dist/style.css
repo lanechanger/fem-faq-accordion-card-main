@@ -49,7 +49,7 @@ body {
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  margin: 0 0 1.125rem 0;
+  margin-bottom: 2.375rem;
 }
 
 @media (min-width: 640px) {
@@ -60,7 +60,7 @@ body {
 
 .accordion__subheader {
   font-size: 0.8125rem;
-  padding: 1.25rem 0;
+  padding-bottom: 1.25rem;
   color: #4a4b5e;
   display: block;
   cursor: pointer;
@@ -78,7 +78,7 @@ body {
   background-image: url("/images/icon-arrow-down.svg");
   background-repeat: no-repeat;
   right: 0;
-  top: 1.4375rem;
+  top: 0.3125rem;
   width: 0.625rem;
   height: 0.4375rem;
 }
@@ -98,6 +98,11 @@ body {
 .accordion__checkbox:checked + .accordion__subheader {
   font-weight: 700;
   color: #1d1e35;
+  padding-bottom: 0;
+}
+
+.accordion__wrapper {
+  margin: 0.75rem 0 1rem 0;
 }
 
 .accordion__text {
@@ -107,6 +112,7 @@ body {
 
 .accordion__hr {
   border: 0;
-  border-top: 1px solid #e7e7e9;
+  border-top: 0.0625rem solid #e7e7e9;
+  padding-bottom: 1.25rem;
 }
 /*# sourceMappingURL=style.css.map */

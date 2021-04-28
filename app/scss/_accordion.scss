@@ -10,7 +10,7 @@
     text-align: center;
     font-size: rem(32px);
     font-weight: 700;
-    margin: 0 0 rem(18px) 0;
+    margin-bottom: rem(38px);
 
     @include breakpoint-up(medium) {
       text-align: left;
@@ -19,7 +19,7 @@
 
   &__subheader {
     font-size: rem(13px);
-    padding: rem(20px) 0;
+    padding-bottom: rem(20px);
     color: $veryDarkGrayBlue;
     display: block;
     cursor: pointer;
@@ -36,7 +36,7 @@
       background-image: url("/images/icon-arrow-down.svg");
       background-repeat: no-repeat;
       right: 0;
-      top: rem(23px);
+      top: rem(5px);
       width: rem(10px);
       height: rem(7px);
     }
@@ -59,10 +59,13 @@
     &:checked+.accordion__subheader {
       font-weight: 700;
       color: $darkBlue;
+      padding-bottom: 0;
     }
   }
 
-  &__wrapper {}
+  &__wrapper {
+    margin: rem(12px) 0 rem(16px) 0;
+  }
 
   &__text {
     color: $darkGrayBlue;
@@ -71,6 +74,7 @@
 
   &__hr {
     border: 0;
-    border-top: 1px solid $lightGrayBlue;
+    border-top: rem(1px) solid $lightGrayBlue;
+    padding-bottom: rem(20px);
   }
 }
