@@ -77,9 +77,10 @@ body {
   position: absolute;
   background-image: url("/images/icon-arrow-down.svg");
   background-repeat: no-repeat;
-  right: 10px;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  top: 1.4375rem;
+  width: 0.625rem;
+  height: 0.4375rem;
 }
 
 .accordion__checkbox {
