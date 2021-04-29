@@ -39,9 +39,11 @@
       background-image: url("/images/icon-arrow-down.svg");
       background-repeat: no-repeat;
       right: 0;
-      top: rem(5px);
+      top: rem(3px);
       width: rem(10px);
       height: rem(7px);
+
+      transition: transform 150ms ease-in-out;
     }
   }
 
@@ -63,6 +65,10 @@
       font-weight: 700;
       color: $darkBlue;
       padding-bottom: 0;
+
+      &:after {
+        transform: rotate(180deg);
+      }
     }
   }
 
@@ -80,4 +86,16 @@
     border-top: rem(1px) solid $lightGrayBlue;
     padding-bottom: rem(20px);
   }
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: rem(-107px);
+  background-image: url("/images/illustration-woman-online-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: rem(237px);
+  height: rem(196px);
 }
