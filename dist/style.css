@@ -34,6 +34,7 @@ body {
 
 .l-site-container {
   margin: 0 6.4%;
+  padding-top: 9.25rem;
 }
 
 .accordion {
@@ -42,7 +43,6 @@ body {
   box-shadow: 0rem 3.125rem 3.125rem -1.25rem rgba(53, 18, 122, 0.497159);
   border-radius: 1.4375rem;
   position: relative;
-  margin-top: 9.25rem;
   background-image: url("/images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-position: top center;
