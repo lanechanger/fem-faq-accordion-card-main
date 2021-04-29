@@ -5,6 +5,9 @@
   border-radius: rem(23px);
   position: relative;
   margin-top: rem(148px);
+  background-image: url("/images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
 
   &__header {
     text-align: center;
