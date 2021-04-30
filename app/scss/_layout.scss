@@ -24,6 +24,7 @@
 
   @include breakpoint-up(medium) {
     flex-direction: row;
+    justify-content: space-between;
     padding: 0;
   }
 
@@ -34,7 +35,7 @@
 
     @include breakpoint-up(medium) {
       position: relative;
-      flex: 0 1 rem(477px);
+      flex: 0 1 rem(388px);
       top: 0;
       left: 0;
     }
