@@ -37,7 +37,7 @@ body {
 
 .l-site-container {
   margin: 0 6.4%;
-  padding-top: 9.25rem;
+  padding: 9.25rem 0 4.5rem 0;
 }
 
 @media (min-width: 640px) {

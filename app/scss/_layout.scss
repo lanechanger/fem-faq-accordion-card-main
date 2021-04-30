@@ -1,7 +1,7 @@
 .l {
   &-site-container {
     margin: 0 6.4%;
-    padding-top: rem(148px);
+    padding: rem(148px) 0 rem(72px) 0;
 
     @include breakpoint-up(medium) {
       display: flex;
