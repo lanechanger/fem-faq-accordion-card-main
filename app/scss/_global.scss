@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  font-size: 12px;
+  font-size: rem(12px);
   line-height: 1;
   color: $darkBlue;
   background-image: linear-gradient(180deg, $bgViolet 0%, $bgBlue 100%);
@@ -22,7 +22,7 @@ body {
 }
 
 .attribution {
-  font-size: rem(14px);
+  font-size: rem(13px);
   text-align: center;
   width: 100%;
   z-index: -1;
@@ -30,7 +30,6 @@ body {
   color: $lightGrayBlue;
   bottom: 1rem;
   position: fixed;
-  margin-left: -6.4%;
 
   & a {
     color: $softRed;
