@@ -7,6 +7,7 @@
   background-image: url("/images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-position: top center;
+  max-width: rem(920px);
 
   &__header {
     text-align: center;

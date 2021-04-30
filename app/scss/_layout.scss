@@ -2,5 +2,10 @@
   &-site-container {
     margin: 0 6.4%;
     padding-top: rem(148px);
+
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

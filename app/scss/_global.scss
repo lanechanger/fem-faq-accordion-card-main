@@ -24,8 +24,13 @@ body {
 .attribution {
   font-size: rem(14px);
   text-align: center;
-  margin: 1rem 0 1.5rem 0;
+  width: 100%;
+  z-index: -1;
+
   color: $lightGrayBlue;
+  bottom: 1rem;
+  position: fixed;
+  margin-left: -6.4%;
 
   & a {
     color: $softRed;

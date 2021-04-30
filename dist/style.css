@@ -24,8 +24,12 @@ body {
 .attribution {
   font-size: 0.875rem;
   text-align: center;
-  margin: 1rem 0 1.5rem 0;
+  width: 100%;
+  z-index: -1;
   color: #e7e7e9;
+  bottom: 1rem;
+  position: fixed;
+  margin-left: -6.4%;
 }
 
 .attribution a {
@@ -37,6 +41,13 @@ body {
   padding-top: 9.25rem;
 }
 
+@media (min-width: 640px) {
+  .l-site-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .accordion {
   padding: 8.25rem 7.34% 3rem 7.34%;
   background-color: white;
@@ -46,6 +57,7 @@ body {
   background-image: url("/images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-position: top center;
+  max-width: 57.5rem;
 }
 
 .accordion__header {
