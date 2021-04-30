@@ -7,7 +7,42 @@
   background-image: url("/images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  max-width: rem(920px);
+  flex-basis: rem(920px);
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-up(medium) {
+    flex-direction: row;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-107px);
+    background-image: url("/images/illustration-woman-online-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: rem(237px);
+    height: rem(196px);
+
+
+    @include breakpoint-up(medium) {
+      position: relative;
+      flex: 0 1 rem(460px);
+      top: 0;
+      left: 0;
+      width: 100;
+      height: 100%;
+
+    }
+  }
+
+  &__FAQ {
+    @include breakpoint-up(medium) {
+      flex: 0 1 rem(460px);
+    }
+  }
 
   &__header {
     text-align: center;
@@ -86,16 +121,4 @@
     border-top: rem(1px) solid $lightGrayBlue;
     padding-bottom: rem(20px);
   }
-}
-
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: rem(-107px);
-  background-image: url("/images/illustration-woman-online-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  width: rem(237px);
-  height: rem(196px);
 }
