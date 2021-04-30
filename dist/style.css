@@ -51,13 +51,7 @@ body {
 
 .accordion {
   padding: 8.25rem 7.34% 3rem 7.34%;
-  background-color: white;
-  box-shadow: 0rem 3.125rem 3.125rem -1.25rem rgba(53, 18, 122, 0.497159);
-  border-radius: 1.4375rem;
   position: relative;
-  background-image: url("/images/bg-pattern-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
   flex-basis: 57.5rem;
   display: flex;
   flex-direction: column;
@@ -66,7 +60,6 @@ body {
 @media (min-width: 640px) {
   .accordion {
     flex-direction: row;
-    background-image: none;
     padding: 0;
   }
 }
@@ -74,57 +67,38 @@ body {
 .accordion__logo {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   top: -6.6875rem;
-  background-image: url("/images/illustration-woman-online-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 14.8125rem;
-  height: 12.25rem;
 }
 
 @media (min-width: 640px) {
   .accordion__logo {
     position: relative;
-    flex: 0 1 28.75rem;
-    transform: none;
+    flex: 0 1 29.8125rem;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100px;
-    background-image: url("/images/bg-pattern-desktop.svg");
-    background-color: black;
   }
 }
 
 @media (min-width: 640px) {
   .accordion__FAQ {
-    flex: 0 1 28.75rem;
+    flex: 0 1 27.6875rem;
     padding: 4.0625rem 10.327% 4.0625rem 0;
   }
 }
 
 .accordion__header {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
   margin-bottom: 2.375rem;
 }
 
 @media (min-width: 640px) {
   .accordion__header {
-    text-align: left;
     margin-bottom: 2.6875rem;
   }
 }
 
 .accordion__subheader {
-  font-size: 0.8125rem;
   padding-bottom: 1.25rem;
-  color: #4a4b5e;
   display: block;
-  cursor: pointer;
-  transition: color 150ms ease-in-out;
   position: relative;
 }
 
@@ -134,19 +108,92 @@ body {
   }
 }
 
+.accordion__wrapper {
+  margin: 0.75rem 0 1rem 0;
+}
+
+.accordion__hr {
+  padding-bottom: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .accordion__hr {
+    padding-bottom: 1.125rem;
+  }
+}
+
+.accordion {
+  background-color: white;
+  box-shadow: 0rem 3.125rem 3.125rem -1.25rem rgba(53, 18, 122, 0.497159);
+  border-radius: 1.4375rem;
+  background-image: url("/images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@media (min-width: 640px) {
+  .accordion {
+    background-image: none;
+  }
+}
+
+.accordion__logo {
+  transform: translateX(-50%);
+  background-image: url("/images/illustration-woman-online-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 14.8125rem;
+  height: 12.25rem;
+}
+
+@media (min-width: 640px) {
+  .accordion__logo {
+    transform: none;
+    width: 100%;
+    height: 100px;
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-color: black;
+  }
+}
+
+@media (min-width: 640px) {
+  .accordion__FAQ {
+    min-width: 19.6875rem;
+  }
+}
+
+.accordion__header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .accordion__header {
+    text-align: left;
+  }
+}
+
+.accordion__subheader {
+  font-size: 0.8125rem;
+  color: #4a4b5e;
+  cursor: pointer;
+  transition: color 150ms ease-in-out;
+}
+
 .accordion__subheader:hover {
   color: #f47c57;
 }
 
 .accordion__subheader:after {
   content: '';
-  position: absolute;
   background-image: url("/images/icon-arrow-down.svg");
   background-repeat: no-repeat;
-  right: 0;
-  top: 0.1875rem;
   width: 0.625rem;
   height: 0.4375rem;
+  position: absolute;
+  right: 0;
+  top: 0.1875rem;
   transition: transform 150ms ease-in-out;
 }
 
@@ -172,10 +219,6 @@ body {
   transform: rotate(180deg);
 }
 
-.accordion__wrapper {
-  margin: 0.75rem 0 1rem 0;
-}
-
 .accordion__text {
   color: #787887;
   line-height: calc(18/12);
@@ -184,12 +227,5 @@ body {
 .accordion__hr {
   border: 0;
   border-top: 0.0625rem solid #e7e7e9;
-  padding-bottom: 1.25rem;
-}
-
-@media (min-width: 640px) {
-  .accordion__hr {
-    padding-bottom: 1.125rem;
-  }
 }
 /*# sourceMappingURL=style.css.map */

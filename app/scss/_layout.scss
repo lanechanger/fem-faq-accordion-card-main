@@ -14,3 +14,66 @@
     }
   }
 }
+
+.accordion {
+  padding: rem(132px) 7.34% rem(48px) 7.34%;
+  position: relative;
+  flex-basis: rem(920px);
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint-up(medium) {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    top: rem(-107px);
+
+    @include breakpoint-up(medium) {
+      position: relative;
+      flex: 0 1 rem(477px);
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__FAQ {
+    @include breakpoint-up(medium) {
+      flex: 0 1 rem(443px);
+      padding: rem(65px) 10.327% rem(65px) 0;
+    }
+  }
+
+  &__header {
+    margin-bottom: rem(38px);
+
+    @include breakpoint-up(medium) {
+      margin-bottom: rem(43px);
+    }
+  }
+
+  &__subheader {
+    padding-bottom: rem(20px);
+    display: block;
+    position: relative;
+
+    @include breakpoint-up(medium) {
+      padding-bottom: rem(18px);
+    }
+  }
+
+  &__wrapper {
+    margin: rem(12px) 0 rem(16px) 0;
+  }
+
+  &__hr {
+    padding-bottom: rem(20px);
+
+    @include breakpoint-up(medium) {
+      padding-bottom: rem(18px);
+    }
+  }
+}

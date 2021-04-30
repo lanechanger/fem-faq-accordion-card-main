@@ -1,27 +1,17 @@
 .accordion {
-  padding: rem(132px) 7.34% rem(48px) 7.34%;
   background-color: white;
   box-shadow: rem(0px) rem(50px) rem(50px) rem(-20px) rgba(53, 18, 122, 0.497159);
   border-radius: rem(23px);
-  position: relative;
   background-image: url("/images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  flex-basis: rem(920px);
-  display: flex;
-  flex-direction: column;
 
   @include breakpoint-up(medium) {
-    flex-direction: row;
     background-image: none;
-    padding: 0;
   }
 
   &__logo {
-    position: absolute;
-    left: 50%;
     transform: translateX(-50%);
-    top: rem(-107px);
     background-image: url("/images/illustration-woman-online-mobile.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -30,11 +20,7 @@
 
 
     @include breakpoint-up(medium) {
-      position: relative;
-      flex: 0 1 rem(460px);
       transform: none;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100px;
       background-image: url("/images/bg-pattern-desktop.svg");
@@ -44,8 +30,7 @@
 
   &__FAQ {
     @include breakpoint-up(medium) {
-      flex: 0 1 rem(460px);
-      padding: rem(65px) 10.327% rem(65px) 0;
+      min-width: rem(315px);
     }
   }
 
@@ -53,26 +38,17 @@
     text-align: center;
     font-size: rem(32px);
     font-weight: 700;
-    margin-bottom: rem(38px);
 
     @include breakpoint-up(medium) {
       text-align: left;
-      margin-bottom: rem(43px);
     }
   }
 
   &__subheader {
     font-size: rem(13px);
-    padding-bottom: rem(20px);
     color: $veryDarkGrayBlue;
-    display: block;
     cursor: pointer;
     transition: color 150ms ease-in-out;
-    position: relative;
-
-    @include breakpoint-up(medium) {
-      padding-bottom: rem(18px);
-    }
 
     &:hover {
       color: $softRed;
@@ -80,13 +56,13 @@
 
     &:after {
       content: '';
-      position: absolute;
       background-image: url("/images/icon-arrow-down.svg");
       background-repeat: no-repeat;
-      right: 0;
-      top: rem(3px);
       width: rem(10px);
       height: rem(7px);
+      position: absolute;
+      right: 0;
+      top: rem(3px);
 
       transition: transform 150ms ease-in-out;
     }
@@ -117,10 +93,6 @@
     }
   }
 
-  &__wrapper {
-    margin: rem(12px) 0 rem(16px) 0;
-  }
-
   &__text {
     color: $darkGrayBlue;
     line-height: calc(18/12);
@@ -129,10 +101,5 @@
   &__hr {
     border: 0;
     border-top: rem(1px) solid $lightGrayBlue;
-    padding-bottom: rem(20px);
-
-    @include breakpoint-up(medium) {
-      padding-bottom: rem(18px);
-    }
   }
 }
