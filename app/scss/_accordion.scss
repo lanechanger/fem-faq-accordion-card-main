@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-position: top center;
 
-  @include breakpoint-up(medium) {
+  @include breakpoint-up(large) {
     background-image: none;
   }
 
@@ -19,7 +19,7 @@
     height: rem(196px);
 
 
-    @include breakpoint-up(medium) {
+    @include breakpoint-up(large) {
       transform: none;
       width: 100%;
       height: rem(509px);
@@ -42,7 +42,7 @@
   }
 
   &__FAQ {
-    @include breakpoint-up(medium) {
+    @include breakpoint-up(large) {
       min-width: rem(315px);
     }
   }
@@ -52,7 +52,7 @@
     font-size: rem(32px);
     font-weight: 700;
 
-    @include breakpoint-up(medium) {
+    @include breakpoint-up(large) {
       text-align: left;
     }
   }
