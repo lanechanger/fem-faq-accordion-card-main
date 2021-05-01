@@ -1,43 +1,47 @@
 .accordion {
   background-color: white;
-  box-shadow: rem(0px) rem(50px) rem(50px) rem(-20px) rgba(53, 18, 122, 0.497159);
-  border-radius: rem(23px);
   background-image: url("/images/bg-pattern-mobile.svg");
-  background-repeat: no-repeat;
   background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: rem(23px);
+  box-shadow: rem(0px) rem(50px) rem(50px) rem(-20px) rgba(53, 18, 122, 0.497159);
 
   @include breakpoint-up(large) {
     background-image: none;
   }
 
   &__logo {
-    transform: translateX(-50%);
     background-image: url("/images/illustration-woman-online-mobile.svg");
-    background-repeat: no-repeat;
     background-position: right;
-    width: rem(237px);
+    background-repeat: no-repeat;
     height: rem(196px);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: rem(237px);
 
 
     @include breakpoint-up(large) {
-      transform: none;
-      width: 100%;
-      height: auto;
       background-image: url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
       background-position: rem(-86px) center, rem(-580px) 67%;
+      height: auto;
+      -webkit-transform: none;
+      transform: none;
+      width: 100%;
 
       &:after {
-        content: '';
         background-image: url("/images/illustration-box-desktop.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        width: rem(191px);
-        height: rem(184px);
-        position: absolute;
-        left: rem(-95px);
-        top: 50%;
-        transform: translateY(-25%);
+        content: '';
+        -webkit-filter: drop-shadow(0px 25px 50px rgba(53, 18, 122, 0.497159));
         filter: drop-shadow(0px 25px 50px rgba(53, 18, 122, 0.497159));
+        height: rem(184px);
+        left: rem(-95px);
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-25%);
+        transform: translateY(-25%);
+        width: rem(191px);
       }
     }
   }
@@ -49,9 +53,9 @@
   }
 
   &__header {
-    text-align: center;
     font-size: rem(32px);
     font-weight: 700;
+    text-align: center;
 
     @include breakpoint-up(large) {
       text-align: left;
@@ -59,9 +63,10 @@
   }
 
   &__subheader {
-    font-size: rem(13px);
     color: $veryDarkGrayBlue;
     cursor: pointer;
+    font-size: rem(13px);
+    -webkit-transition: color 150ms ease-in-out;
     transition: color 150ms ease-in-out;
 
     &:hover {
@@ -69,16 +74,18 @@
     }
 
     &:after {
-      content: '';
       background-image: url("/images/icon-arrow-down.svg");
       background-repeat: no-repeat;
-      width: rem(10px);
+      content: '';
       height: rem(7px);
       position: absolute;
       right: 0;
       top: rem(3px);
 
+      -webkit-transition: -webkit-transform 150ms ease-in-out;
+      transition: -webkit-transform 150ms ease-in-out;
       transition: transform 150ms ease-in-out;
+      width: rem(10px);
     }
   }
 
@@ -97,11 +104,12 @@
 
     // ...and also style the subheader/question differently
     &:checked+.accordion__subheader {
-      font-weight: 700;
       color: $darkBlue;
+      font-weight: 700;
       padding-bottom: 0;
 
       &:after {
+        -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
       }
     }

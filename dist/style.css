@@ -1,6 +1,6 @@
 html {
-  font-size: 100%;
   box-sizing: border-box;
+  font-size: 100%;
 }
 
 *,
@@ -12,21 +12,21 @@ html {
 }
 
 body {
+  background-image: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+  color: #1d1e35;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 0.75rem;
   line-height: 1;
-  color: #1d1e35;
-  background-image: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
 }
 
 .attribution {
+  bottom: 1rem;
+  color: #e7e7e9;
   font-size: 0.8125rem;
+  position: fixed;
   text-align: center;
   width: 100%;
   z-index: -1;
-  color: #e7e7e9;
-  bottom: 1rem;
-  position: fixed;
 }
 
 .attribution a {
@@ -34,28 +34,28 @@ body {
 }
 
 .l-site-container {
-  margin: 0 6.4%;
-  padding: 9.25rem 0 4.5rem 0;
   height: 100%;
+  margin: 0 6.4%;
   min-height: 100vh;
+  padding: 9.25rem 0 4.5rem 0;
 }
 
 @media (min-width: 1024px) {
   .l-site-container {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 9.028% 0;
     margin: 0 clamp(54px, 6.4%, 6.4%);
+    padding: 9.028% 0;
   }
 }
 
 .accordion {
+  display: flex;
+  flex-basis: 57.5rem;
+  flex-direction: column;
   padding: 8.25rem 7.34% 3rem 7.34%;
   position: relative;
-  flex-basis: 57.5rem;
-  display: flex;
-  flex-direction: column;
 }
 
 @media (min-width: 1024px) {
@@ -67,18 +67,18 @@ body {
 }
 
 .accordion__logo {
-  position: absolute;
   left: 50%;
+  position: absolute;
   top: -6.6875rem;
 }
 
 @media (min-width: 1024px) {
   .accordion__logo {
-    position: relative;
     flex: 0 1 24.25rem;
-    top: 0;
     left: 0;
     margin-right: 1rem;
+    position: relative;
+    top: 0;
   }
 }
 
@@ -100,8 +100,8 @@ body {
 }
 
 .accordion__subheader {
-  padding-bottom: 1.25rem;
   display: block;
+  padding-bottom: 1.25rem;
   position: relative;
 }
 
@@ -127,11 +127,11 @@ body {
 
 .accordion {
   background-color: white;
-  box-shadow: 0rem 3.125rem 3.125rem -1.25rem rgba(53, 18, 122, 0.497159);
-  border-radius: 1.4375rem;
   background-image: url("/images/bg-pattern-mobile.svg");
-  background-repeat: no-repeat;
   background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 1.4375rem;
+  box-shadow: 0rem 3.125rem 3.125rem -1.25rem rgba(53, 18, 122, 0.497159);
 }
 
 @media (min-width: 1024px) {
@@ -141,34 +141,34 @@ body {
 }
 
 .accordion__logo {
-  transform: translateX(-50%);
   background-image: url("/images/illustration-woman-online-mobile.svg");
-  background-repeat: no-repeat;
   background-position: right;
-  width: 14.8125rem;
+  background-repeat: no-repeat;
   height: 12.25rem;
+  transform: translateX(-50%);
+  width: 14.8125rem;
 }
 
 @media (min-width: 1024px) {
   .accordion__logo {
-    transform: none;
-    width: 100%;
-    height: auto;
     background-image: url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
     background-position: -5.375rem center, -36.25rem 67%;
+    height: auto;
+    transform: none;
+    width: 100%;
   }
   .accordion__logo:after {
-    content: '';
     background-image: url("/images/illustration-box-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 11.9375rem;
+    content: '';
+    filter: drop-shadow(0px 25px 50px rgba(53, 18, 122, 0.497159));
     height: 11.5rem;
-    position: absolute;
     left: -5.9375rem;
+    position: absolute;
     top: 50%;
     transform: translateY(-25%);
-    filter: drop-shadow(0px 25px 50px rgba(53, 18, 122, 0.497159));
+    width: 11.9375rem;
   }
 }
 
@@ -179,9 +179,9 @@ body {
 }
 
 .accordion__header {
-  text-align: center;
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
@@ -191,9 +191,9 @@ body {
 }
 
 .accordion__subheader {
-  font-size: 0.8125rem;
   color: #4a4b5e;
   cursor: pointer;
+  font-size: 0.8125rem;
   transition: color 150ms ease-in-out;
 }
 
@@ -202,15 +202,15 @@ body {
 }
 
 .accordion__subheader:after {
-  content: '';
   background-image: url("/images/icon-arrow-down.svg");
   background-repeat: no-repeat;
-  width: 0.625rem;
+  content: '';
   height: 0.4375rem;
   position: absolute;
   right: 0;
   top: 0.1875rem;
   transition: transform 150ms ease-in-out;
+  width: 0.625rem;
 }
 
 .accordion__checkbox {
@@ -226,8 +226,8 @@ body {
 }
 
 .accordion__checkbox:checked + .accordion__subheader {
-  font-weight: 700;
   color: #1d1e35;
+  font-weight: 700;
   padding-bottom: 0;
 }
 

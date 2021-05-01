@@ -1,6 +1,6 @@
 html {
-  font-size: 100%;
   box-sizing: border-box;
+  font-size: 100%;
 }
 
 *,
@@ -12,22 +12,23 @@ html {
 }
 
 body {
+  background-image: -webkit-linear-gradient(top, $bgViolet 0%, $bgBlue 100%);
+  background-image: linear-gradient(180deg, $bgViolet 0%, $bgBlue 100%);
+  color: $darkBlue;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: rem(12px);
   line-height: 1;
-  color: $darkBlue;
-  background-image: linear-gradient(180deg, $bgViolet 0%, $bgBlue 100%);
 }
 
 .attribution {
+  bottom: 1rem;
+
+  color: $lightGrayBlue;
   font-size: rem(13px);
+  position: fixed;
   text-align: center;
   width: 100%;
   z-index: -1;
-
-  color: $lightGrayBlue;
-  bottom: 1rem;
-  position: fixed;
 
   & a {
     color: $softRed;
